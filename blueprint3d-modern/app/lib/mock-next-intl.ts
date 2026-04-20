@@ -27,9 +27,11 @@ export const getTimeZone = async () => 'UTC';
 export const getMessages = async () => ({});
 
 // Заглушка для навигации
-export const createSharedPathnamesNavigation = () => ({
+export const defineRouting = (config: any) => config;
+export const createNavigation = (routing: any) => ({
   Link: 'a',
   redirect: () => {},
   usePathname: () => '',
   useRouter: () => ({}),
 });
+export const createSharedPathnamesNavigation = createNavigation;

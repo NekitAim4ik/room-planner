@@ -58,6 +58,7 @@ const nextConfig: NextConfig = {
         'next-intl': path.resolve(__dirname, 'lib/mock-next-intl'),
         'next-intl/navigation': path.resolve(__dirname, 'lib/mock-next-intl'),
         'next-intl/server': path.resolve(__dirname, 'lib/mock-next-intl'),
+        'next-intl/routing': path.resolve(__dirname, 'lib/mock-next-intl'),
       };
     }
 
@@ -72,5 +73,4 @@ const nextConfig: NextConfig = {
   }
 }
 
-const withNextIntl = createNextIntlPlugin('./i18n/request.ts')
-export default withNextIntl(nextConfig)
+export default nextConfig
