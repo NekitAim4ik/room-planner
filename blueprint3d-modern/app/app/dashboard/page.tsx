@@ -4,6 +4,7 @@ import { useAuth } from '@/lib/auth-context';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import dynamic from 'next/dynamic';
+import AIAssistant from '@/components/ui/AIAssistant';
 
 // Динамический импорт реального редактора (без SSR)
 const Blueprint3DEditor = dynamic(
@@ -67,6 +68,7 @@ export default function DashboardPage() {
       <main className="flex-1 relative bg-gray-100">
         <Blueprint3DEditor />
       </main>
+      <AIAssistant />
     </div>
   );
 }
